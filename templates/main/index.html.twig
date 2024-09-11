@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rapantix projet
+{% endblock %}
+
+{% block body %}
+
+	<body class="bg-[#dead74]">
+
+		<h1 class="text-2xl text-center font-semibold pt-7">Rapantix projet</h1>
+
+		<div class="container mx-[10%] pt-10">
+			<div class="flex flex-row gap-2">
+				<input id="userMot" type="text" placeholder="Ecris un mot" class="w-[10%]">
+				<button id="checkBtn" class="border bg-gray-300 text-bold">Check !</button>
+			</div>
+
+			<div class="pt-7">
+				<input id="titreChanson" type="text" placeholder="Quel est le titre de la chanson?" class="w-[10%]">
+				<button id"btntrouve" class="border bg-gray-300 text-bold">Trouvé !</button>
+			</div>
+		</div>
+
+		<div class="container mx-[10%] pt-10">
+			<h2 class="font-semibold pt-6 text-xl"><span id="anneeSortie"></span></h2>
+			<div id="lyrics" class="font-semibold pt-7 text-xl"></div>
+		</div>
+
+
+	</body>
+
+{% endblock %}
